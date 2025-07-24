@@ -25,6 +25,13 @@
     color: rgb(233, 90, 8);
 }
 
+.btn-primary {
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    padding: 05px;
+}
+
 /* navbar section styles */
 .navbar {
 
@@ -64,11 +71,61 @@
     color: rgba(0, 0, 0, 0.5);
     width: 540px;
 }
+.banner-img{
+    width: 100%;
+}
+
+/* card section */
+.card-container {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 120px;
+}
+
+.card-description {
+    color: #8987A1;
+}
+
+.card-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin-top: 3rem;
+
+
+}
+
+.card-item {
+    margin-bottom:1.50rem;
+}
+
+.card-item h3 {
+    color: rgb(56, 54, 54);
+  
+}
+
+.card-item h4 {
+    margin-bottom: 1.2rem;
+}
+
+.card-img {
+    width:100%; 
+}
+
+.card-btn {
+    width: 100%;
+    border: none;
+}
 
 
 @media screen and (max-width:576px) {
 
-
+    /* nav section */
     .nav-item-1,
     .nav-item-2,
     .nav-item-3 {
@@ -77,6 +134,18 @@
 
     }
 
+    .nav-logo {
+        /* margin-left: 20px; */
+        font-weight: 400;
+        padding: 50px;
+
+    }
+
+    .nav-itmes , .nav-item-4 {
+        padding: 50px;
+    }
+
+    /* banner section */
     .banner {
         flex-direction: column;
         flex-direction: column-reverse;
@@ -86,22 +155,10 @@
 
     }
 
-   
-
-    .nav-logo {
-        margin-left: 20px;
-        font-weight: 400;
-
-    }
-
-    .nav-itmes {
-        margin-right: 20px;
-    }
-
     .banner-title {
         font-size: 28px;
-        margin-left: 30px;
-        width: 100%;
+        /* margin-left: 30px; */
+        /* width: 100%; */
     }
 
     .banner-description {
@@ -111,9 +168,37 @@
 
     .banner-img img {
         width: 100%;
+        padding: 50px;
 
 
     }
 
+    /* card section */
+    
+    .card-items {
+        grid-template-columns: repeat(2, 1fr);
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        /* margin-left: 32px ; */
+    }
+
+    .card-img {
+        width: 200px;
+    }
+        
+
+    .card-description {
+        width: 300px;
+        margin-left:70px;
+    }
+    .card-btn{
+     width: 200px;
+    }
+    .card-title{
+        font-size: 28px;
+    }
 
 }
