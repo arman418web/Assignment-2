@@ -73,9 +73,9 @@ body {
 
 /* banner-section */
 .banner {
-  gap: 170px;
+  gap: 20px;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 20px;
   justify-content: space-between;
 }
 
@@ -101,7 +101,7 @@ body {
 .card-title {
   font-size: 3rem;
   font-weight: 700;
-  margin-top: 120px;
+  margin-top: 65px;
 }
 
 .card-description {
@@ -144,12 +144,10 @@ body {
 }
 
 .seller-img .img-2 {
-    width: 280px;
-    height: 280px;
-    margin-left: -150px;
-    margin-top: -100px;
-
-
+  width: 280px;
+  height: 280px;
+  margin-left: -150px;
+  margin-top: -100px;
 }
 
 .seller-img .img-1 {
@@ -271,8 +269,7 @@ body {
   align-items: center;
   gap: 20px;
 }
-.subscription-container {
-}
+
 .sub-title {
   color: white;
   font-size: 1.75rem;
@@ -296,15 +293,35 @@ body {
 .sub-input-field {
   align-items: center;
 }
-/* footer section style */
-footer{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) ;
-  gap: 110px;
-  padding: 200px;
-  align-items: center;
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  margin: 60px 0;
+  /* align-items: center; */
 }
-.footer-nav
+
+.footer-logo {
+  max-width: 359px;
+}
+
+.footer-link {
+  text-decoration: none;
+  list-style: none;
+}
+.footer-link li {
+  padding: 16px 0;
+}
+
+.footer-sponsor-icon {
+  display: flex;
+  gap: 0 24px;
+}
+.footer-sponsor-icon img {
+  width: 36px;
+  height: 36px;
+}
 
 @media screen and (max-width: 576px) {
   /* nav section */
@@ -458,5 +475,32 @@ footer{
   }
   .subscription {
     height: 275px;
+  }
+
+  /* footer  */
+  .footer-section {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .footer-logo {
+    max-width: 359px;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    list-style: none;
+  }
+  .footer-link li {
+    padding: 16px 0;
+  }
+
+  .footer-sponsor-icon {
+    display: flex;
+    gap: 0 24px;
+  }
+  .footer-sponsor-icon img {
+    width: 36px;
+    height: 36px;
   }
 }
