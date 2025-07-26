@@ -32,6 +32,16 @@ body {
   display: flex;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .primary-color {
   color: rgb(233, 90, 8);
 }
@@ -52,6 +62,9 @@ body {
 
   text-decoration: underline;
   margin-top: 10px;
+}
+.text-shadow {
+  text-shadow: 2px 3px 4px gray;
 }
 
 /* navbar section styles */
@@ -135,33 +148,43 @@ body {
 .card-btn {
   width: 100%;
   border: none;
+  height: 50px;
+}
+.card-btn:hover {
+  box-shadow: 2px 2px 5px #e95a08;
+  transition: 0.4s;
 }
 
 /*seller review section style */
-.seller-container {
+.Planet-lover-container {
   margin-top: 200px;
   justify-content: space-around;
 }
 
-.seller-img .img-2 {
+.Planet-lover-img .img-2 {
   width: 280px;
   height: 280px;
   margin-left: -150px;
   margin-top: -100px;
+   filter:drop-shadow(1px 3px 15px rgb(63, 61, 61)) ;
 }
 
-.seller-img .img-1 {
+
+.badge-animation {
+  animation: spin 2s linear infinite;
+}
+.Planet-lover-img .img-1 {
   width: 100%;
   height: 597px;
 }
 
-.seller-title h1 {
+.Planet-lover-title h1 {
   margin-bottom: 70px;
   margin-left: 20px;
   font-size: 4rem;
 }
 
-.seller-title p {
+.Planet-lover-title p {
   color: #8987a1;
   margin: 20px 5px;
   width: 540px;
@@ -283,6 +306,19 @@ body {
   padding: 20px;
   border: none;
   font-weight: 400;
+  color: #e95a08;
+  
+  
+}
+.sub-input-field input:hover {
+  
+  box-shadow: 2px  2px 20px rgb(3, 2, 2);
+  
+}
+.sub-input-field button:hover {
+  
+  box-shadow: 2px  2px 5px rgb(3, 2, 2);
+  
 }
 .sub-input-field button {
   width: 186px;
@@ -292,6 +328,10 @@ body {
 }
 .sub-input-field {
   align-items: center;
+}
+.sub-input-field input:focus {
+  outline:none;
+ 
 }
 
 .footer-section {
@@ -304,8 +344,12 @@ body {
 
 .footer-logo {
   max-width: 359px;
+ 
 }
+.footer-logo-img{
+  filter: drop-shadow(2px 2px 7px #e95a08);
 
+}
 .footer-link {
   text-decoration: none;
   list-style: none;
@@ -321,7 +365,24 @@ body {
 .footer-sponsor-icon img {
   width: 36px;
   height: 36px;
+  
+  
 }
+.footer-img-1 {
+  filter:drop-shadow(1px 2px 15px rgba(36, 137, 190, 1.00)) ;
+  
+}
+.footer-img-2 {
+  filter:drop-shadow(1px 3px 15px rgb(63, 61, 61)) ;
+ 
+}
+.footer-img-3 {
+  filter: drop-shadow(1px 2px 15px rgb(1, 159, 245));
+}
+.footer-img-4 {
+  filter: drop-shadow(1px 2px 15px rgba(183, 28, 28, 1.00));
+}
+
 
 @media screen and (max-width: 576px) {
   /* nav section */
@@ -390,28 +451,28 @@ body {
     margin-left: 70px;
   }
 
-  /* seller section */
-  .seller-container {
+  /* flower and planet lover section */
+  .Planet-lover-container {
     flex-direction: column;
     padding: 10px;
     margin-top: 2rem;
   }
 
-  .seller-title li {
+  .Planet-lover-title li {
     margin-left: 40px;
   }
 
-  .seller-title p {
+  .Planet-lover-title p {
     width: 361px;
     padding-left: 10px;
   }
 
-  .seller-title h1 {
+  .Planet-lover-title h1 {
     font-size: 1.5rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-  .seller-img .img-1 {
+  .Planet-lover-img .img-1 {
     height: 500px;
   }
 
