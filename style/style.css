@@ -86,10 +86,11 @@ body {
 
 /* banner-section */
 .banner {
-  gap: 20px;
+  gap: 170px;
   align-items: center;
   margin-top: 20px;
   justify-content: space-between;
+ 
 }
 
 .banner-title {
